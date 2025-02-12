@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:text="|Hello~  ${name}님|"></div>
+    <div th:text="'Hello~  ' + ${name} + '님'"></div>
+    <div>나이 : [[ ${age} ]]살</div>
+</body>
+</html>
