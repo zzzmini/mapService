@@ -11,11 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
     @GetMapping("")
     public String list() {
+        // 전체 리스트 얻어오기
+
         return "/members/memberList";
     }
 
     @GetMapping("/new")
     public String newMembers() {
+        // 신규회원가입하기 창 보이기
         return "/members/createMemberForm";
     }
 
