@@ -5,7 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-  <form th:action="@{/members/new}" method="post">
+
+  <form th:action="@{/members/update}" method="post">
+    <input type="hidden" th:field="${member.id}">
     <div>
       <label for="name">이름</label>
       <input type="text" id="name"

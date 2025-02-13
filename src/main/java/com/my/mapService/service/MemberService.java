@@ -2,6 +2,7 @@ package com.my.mapService.service;
 
 import com.my.mapService.dto.Member;
 import com.my.mapService.repository.MapMemberRepository;
+import com.my.mapService.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,9 +22,9 @@ public class MemberService {
 //    private final MapMemberRepository repository;
 
     // 3. 생성자 주입 방법
-    private final MapMemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
-    public MemberService(MapMemberRepository memberRepository) {
+    public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 
