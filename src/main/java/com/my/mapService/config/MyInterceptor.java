@@ -18,7 +18,7 @@ public class MyInterceptor implements HandlerInterceptor {
         HttpSession session = request.getSession();
         User currentSession = (User) session.getAttribute("sessionInfo");
         if (ObjectUtils.isEmpty(currentSession)) {
-            response.sendRedirect("/user/myPage/**");
+            response.sendRedirect("/login");
             return false;
         }
         return true;

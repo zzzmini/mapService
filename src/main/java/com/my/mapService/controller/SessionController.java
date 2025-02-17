@@ -34,7 +34,7 @@ public class SessionController {
                 // 로그인 성공
                 // 세션을 생성해서 전달
                 // 비밀번호 확인 후
-                session.setAttribute("", sessionUser);
+                session.setAttribute("sessionInfo", sessionUser);
                 session.setMaxInactiveInterval(60 * 30);  // 30분
                 return "home";
             } else {
